@@ -28,7 +28,8 @@
                         <li class="nav-item"><a href="#" class="nav-link">ニュース</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">採用情報</a></li>
                         <li class="nav-item"><a href="#" class="nav-link active">お問い合わせ</a></li>
-            </div>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -36,16 +37,16 @@
         <h1 class="mt-4 pb-4 border-bottom">送信完了</h1>
         <p>ありがとうございました。送信を受け付けました。</p>
         <p>3営業日以内をめどにご返信いたしますので、しばらくお待ちください。</p>
-         <% name = params["kaisya"] %>
-         <p>会社名：<%= name%></p>
-         <% name = params["simei"] %>
-         <p>氏名：<%= name%></p>
-         <% name = params["me-ru"] %>
-         <p>メール：<%= name%></p>
-         <% name = params["bangou"] %>
-         <p>電話番号：<%= name%></p>
-         <% name = params["naiyou"] %>
-         <p>内容：<%= name.gsub(/\r\n|\r|\n/, "<br>")%></p>
+            <% name = params["kaisya"] %>
+            <p>会社名：<%= name %></p>
+            <% name = params["simei"] %>
+            <p>氏名：<%= name %></p>
+            <% name = params["me-ru"] %>
+            <p>メール：<%= name %></p>
+            <% name = params["bangou"] %>
+            <p>電話番号：<%= name %></p>
+            <% name = params["naiyou"] %>
+            <p>内容：<%= name.gsub(/\r\n|\r|\n/, "<br>") %></p>
         <div class="text-center mb-4">
             <!-- 「戻る」ボタンを緑色にする設定を追加 -->
             <a href="/" class="btn btn-success">戻る</a>
