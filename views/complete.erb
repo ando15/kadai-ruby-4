@@ -45,7 +45,7 @@
          <% name = params["bangou"] %>
          <p>電話番号：<%= name%></p>
          <% name = params["naiyou"] %>
-         <p>内容：<%= name%></p>
+         <p>内容：.gsub("<br>")<%= name%></p>
         <div class="text-center mb-4">
             <!-- 「戻る」ボタンを緑色にする設定を追加 -->
             <a href="/" class="btn btn-success">戻る</a>
